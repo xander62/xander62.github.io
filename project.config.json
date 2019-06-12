@@ -1,0 +1,57 @@
+  "ignore": []
+},
+"setting": {
+  "urlCheck": false,
+  "urlCheck": true,
+  "es6": true,
+  "postcss": true,
+  "minified": true,
+  "newFeature": true,
+  "autoAudits": false,
+  "autoAudits": true,
+  "checkInvalidKey": true
+},
+"compileType": "miniprogram",
+"libVersion": "2.7.0",
+"appid": "wx5fa6e8bfad195677",
+"projectname": "miniprogram-yinghuozhihui",
+"appid": "wxc596a32557016fda",
+"projectname": "%E8%90%A4%E7%81%AB%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+"debugOptions": {
+  "hidedInDevtools": []
+},
+@ -31,
+30 +31,
+13 @@
+			"current": -1,
+"list": []
+},
+"plugin": {
+"current": -1,
+"list": []
+},
+"game": {
+"currentL": -1,
+"list": []
+},
+"miniprogram": {
+"current": 1,
+"list": [
+  {
+    "id": -1,
+    "name": "智筹",
+    "pathName": "pages/intelligence/intelligence",
+    "scene": null
+  },
+  {
+    "id": -1,
+    "name": "智筹",
+    "pathName": "pages/intelligence/intelligence",
+    "scene": null
+  }
+]
+			"current": -1,
+"list": []
+}
+}
+}

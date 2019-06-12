@@ -1,0 +1,58 @@
+<!--搜索栏-->
+<view class='intel-search-wrap'>
+  <view class='intel-search'>
+    <view class='search-logo-wrap'><image class='search-logo' src='../../images/search-logo.png'></image></view>
+    <text class='search-text'>搜索你感兴趣的内容</text>
+  </view>
+  <view class='question'>
+    <image class='question-img' src='../../images/question-img.png'></image>
+    <text class='question-text'>去提问</text>
+  </view>
+</view>
+<!--轮播图-->
+<view class='intel-swiper-wrap'>
+  <swiper class='intel-swiper'
+  interval="3500"
+  duration="500"
+  indicator-dots
+  circular	
+  autoplay
+>
+    <block wx:for="{{imgUrls}}">
+      <swiper-item class='banner-item'>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--导航栏-->
+<view class='intel-list'>
+  <view class="list-item" wx:for="{{navList}}" wx:key="{{index}}">
+    <text class='list-item-text'>{{item}}</text>
+  </view>
+</view>
+<!--内容栏-->
+<view class='intel-item-wrap'>
+  <view class='text-wrap'>
+    <view class='recommend'>
+        <text class='recommend-text'>推荐</text>
+    </view>
+    <text class='more'>更多问题</text>
+  </view>
+  <view class='recommend-list'>
+    <view class='recommend-item' wx:for="{{recommendList}}" wx:key="{{index}}">
+      <view class='type-wrap'>
+        <image src='{{item.typeImg}}' class='type-img'></image>
+        <text class='type'>{{item.type}}</text>
+      </view>
+      <view class='item-main'>
+        <view class='item-content'>{{item.title}}</view>
+        <view class='item-bottom'>
+          <view class='view-num-wrap'><text class='view-num'>{{item.viewNum}}</text><image src='../../images/view.png'></image></view>
+          <view class='reply-num-wrap'><text class='reply-num'>{{item.replyNum}}</text><image src='../../images/comment.png'></image></view>
+          <view class='reply-tap'><image class='reply-img' src='{{item.replyImg}}'></image>{{item.replyType}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
